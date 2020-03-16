@@ -2,4 +2,4 @@ version: "3"
 
 services:
   holadocker:
-    image: analistasistema/hola-docker:8cb4f573b00d1ccca60dddde076715efd21012d2
+    image: analistasistema/hola-docker:bf39a1de4c91cee70b53044037f2dfdc6a01ade6
