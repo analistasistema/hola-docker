@@ -10,4 +10,4 @@ jobs:
       - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
       - run: docker build -t analistasistema/hola-docker:$CIRCLE_SHA1 .
       - run: docker push analistasistema/hola-docker:$CIRCLE_SHA1
-      - run: ssh -o StrictHostKeyChecking=no administrador@vmdockermary "/bin/bash /root/docker/deploy.sh $CIRCLE_SHA1"
+      - run: ssh -o StrictHostKeyChecking=no administrador@pedidosweb.iancarina.com.ve -p 8822 "/bin/bash /root/docker/deploy.sh $CIRCLE_SHA1"
