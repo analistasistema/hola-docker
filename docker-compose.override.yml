@@ -11,8 +11,8 @@ services:
     expose:
       - "80"
       - "443"
-    volumes:
-      - .:/usr/share/nginx/html:ro
+    #volumes:
+    #- .:/usr/share/nginx/html:ro
     environment:
       - VIRTUAL_HOST=pedidoswebdev.iancarina.com.ve
       - LETSENCRYPT_HOST=pedidoswebdev.iancarina.com.ve
