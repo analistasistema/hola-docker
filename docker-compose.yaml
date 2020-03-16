@@ -4,9 +4,6 @@ services:
   holadocker:
     container_name: ci_holadocker
     image: analistasistema/hola-docker
-    # build:
-    #   context: .
-    #   dockerfile: ./Dockerfile
     restart: always
     expose:
       - "80"
