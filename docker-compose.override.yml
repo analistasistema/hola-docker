@@ -2,24 +2,4 @@ version: "3"
 
 services:
   holadocker:
-    container_name: ci_holadocker
-    image: analistasistema/hola-docker
-    # build:
-    #   context: .
-    #   dockerfile: ./Dockerfile
-    restart: always
-    expose:
-      - "80"
-      - "443"
-    #volumes:
-    #- .:/usr/share/nginx/html:ro
-    environment:
-      - VIRTUAL_HOST=pedidoswebdev.iancarina.com.ve
-      - LETSENCRYPT_HOST=pedidoswebdev.iancarina.com.ve
-      - LETSENCRYPT_EMAIL=pedidosweb@iancarina.com.ve
-    networks:
-      - corporacionmarynet
-
-networks:
-  corporacionmarynet:
-    external: true
+    image: analistasistema/hola-docker:690b574708780bc304f2760fc06ee4b0050fbbc7
